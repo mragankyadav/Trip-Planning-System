@@ -1,0 +1,100 @@
+Started GET "/" for 127.0.0.1 at 2016-10-25 13:39:20 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 641ms (Views: 601.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 13:52:17 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 289ms (Views: 252.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 13:54:36 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 344ms (Views: 308.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 13:58:38 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 333ms (Views: 279.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:00:00 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 324ms (Views: 285.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:03:21 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 308ms (Views: 269.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:06:17 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 300ms (Views: 261.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:06:40 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 507ms (Views: 392.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:07:55 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 582ms (Views: 539.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:08:52 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 299ms (Views: 259.8ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:09:09 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 296ms (Views: 257.3ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:13:37 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 357ms (Views: 308.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:16:17 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 316ms (Views: 277.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:43:08 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 327ms (Views: 284.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:46:37 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 314ms (Views: 275.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:47:03 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 343ms (Views: 303.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:59:07 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 355ms (Views: 315.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 14:59:36 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 309ms (Views: 269.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 16:46:01 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 323ms (Views: 282.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 16:55:06 -0500
+Processing by TripPlannerController#index as HTML
+  Rendering trip_planner/index.html.haml within layouts/application
+  Rendered trip_planner/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 316ms (Views: 270.4ms | ActiveRecord: 0.0ms)
