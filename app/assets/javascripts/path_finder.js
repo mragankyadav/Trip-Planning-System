@@ -19,6 +19,10 @@ function initMap() {
             position: google.maps.ControlPosition.TOP_RIGHT
         }
     });
+    var input1 = document.getElementById('from_from');
+    var input2 = document.getElementById('from_to');
+    var autocomplete1 = new google.maps.places.Autocomplete(input1);
+    var autocomplete2 = new google.maps.places.Autocomplete(input2);
 }
 
 function geocodeAddress(geocoder, resultsMap, address, callback) {
@@ -36,7 +40,7 @@ function geocodeAddress(geocoder, resultsMap, address, callback) {
   });
 }
 
-function draw_Bike_Walk_Route(from, to,mode){
+function draw_Route(from, to, mode){
     var directionsService = new google.maps.DirectionsService;
         var directionsDisplay = new google.maps.DirectionsRenderer;
         directionsDisplay.setMap(map);
@@ -46,11 +50,10 @@ function draw_Bike_Walk_Route(from, to,mode){
           SourceCordinates = fromaddr
           geocodeAddress(geocoder,map,to,function(toaddr){
             destinationCordinates = toaddr
-            if(mode==1){
             directionsService.route({
             origin: new google.maps.LatLng(parseFloat(fromaddr.lat()), parseFloat(fromaddr.lng())),
             destination: new google.maps.LatLng(parseFloat(toaddr.lat()),parseFloat(toaddr.lng())),
-            travelMode: 'BICYCLING'
+            travelMode: mode
             }, function(response, status) {
             if (status=='OK') {
               directionsDisplay.setDirections(response);
@@ -58,66 +61,38 @@ function draw_Bike_Walk_Route(from, to,mode){
               window.alert('Directions request failed due to ' + status);
             }
             });
-          }
-          else{
-              directionsService.route({
-            origin: new google.maps.LatLng(parseFloat(fromaddr.lat()), parseFloat(fromaddr.lng())),
-            destination: new google.maps.LatLng(parseFloat(toaddr.lat()),parseFloat(toaddr.lng())),
-            travelMode: 'WALKING'
-            }, function(response, status) {
-            if (status=='OK') {
-              directionsDisplay.setDirections(response);
-            } else {
-              window.alert('Directions request failed due to ' + status);
-            }
-            });
-          }
         });
     });
 }
         
-function drawRoute(origin,destination){
-    var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        directionsDisplay.setMap(map);
-        directionsService.route({
-          origin: new google.maps.LatLng(30.51953606, -96.41673369),
-          destination: new google.maps.LatLng(30.51999039,-96.4167104),
-          travelMode: 'DRIVING'
-        }, function(response, status) {
-          if (status === 'OK') {
-            directionsDisplay.setDirections(response);
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-        
-}
 // Layer populater
 $(document).ready(function() {
     
-    $('#pathFinderForm').submit(function(event) {
-        $('#path_finder').modal('hide');
-        // stop the form from submitting the normal way and refreshing the page
-        
-        event.preventDefault();
-        
-    });
     
     $('#pathFinderForm #bike_route').click(function(event) {
         $('#pathFinderForm #bike_route').css("background","#cc7272");
-        
+        $('#pathFinderForm #car_route').css("background","white");
         $('#pathFinderForm #walk_route').css("background","white");
         var from = $('#from_from').val();
         var to = $('#from_to').val();
-        draw_Bike_Walk_Route(from,to,1)
+        draw_Route(from,to,'BICYCLING')
     });
     
     $('#pathFinderForm #walk_route').click(function(event) {
         $('#pathFinderForm #walk_route').css("background","#cc7272");
+        $('#pathFinderForm #car_route').css("background","white");
         $('#pathFinderForm #bike_route').css("background","white");
         var from = $('#from_from').val();
         var to = $('#from_to').val();
-        draw_Bike_Walk_Route(from,to,2)
+        draw_Route(from,to,'WALKING')
+    });
+
+    $('#pathFinderForm #car_route').click(function(event) {
+        $('#pathFinderForm #car_route').css("background","#cc7272");
+        $('#pathFinderForm #walk_route').css("background","white");
+        $('#pathFinderForm #bike_route').css("background","white");
+        var from = $('#from_from').val();
+        var to = $('#from_to').val();
+        draw_Route(from,to,'DRIVING')
     });
 });
