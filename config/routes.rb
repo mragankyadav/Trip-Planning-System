@@ -5,6 +5,12 @@ Rails.application.routes.draw do
   get 'trip_planner/display_route'
   
   get 'dropPins'=>'layers#dropPins'
+  
+  get '/auth/:provider/callback', :to =>  'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get '/logout', :to => 'sessions#destroy'
+  
+  get 'auth_failure' => 'sessions#auth_failure'
 
   resources :routes
   resources :trips
@@ -16,6 +22,8 @@ Rails.application.routes.draw do
   
   resources :cars
   resources :buildings
+  resources :users
+  resources :sessions
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
 
